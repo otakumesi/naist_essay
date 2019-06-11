@@ -2,14 +2,24 @@
 \usepackage{float}
 \usepackage{slashbox}
 \usepackage[compact]{titlesec}
+\usepackage{fancyhdr}
 %---------------------------------------------------
 % ページの設定
 %---------------------------------------------------
 \setlength{\textwidth}{179truemm}
-\setlength{\textheight}{263truemm}
-\setlength{\topmargin}{-12.5truemm}
+\setlength{\textheight}{260truemm}
+\setlength{\topmargin}{-14.5truemm}
 \setlength{\oddsidemargin}{-9.5truemm}
-\pagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{}
+\renewcommand{\footrulewidth}{0pt}
 \setlength{\headheight}{-2truemm}
 \setlength{\parindent}{1zw}
 
@@ -19,15 +29,15 @@
 \begin{center}
   {\huge NAISTにて取り組みたい研究について}
 \end{center}
-\begin{flushright}
-\begin{tabular}{ll}
-氏名: & 新妻巧朗\\
-試験区分: & 情報科学区分\\
-希望研究室: & 自然言語処理研究室
-\end{tabular}
-\end{flushright}
-\vspace{1truemm}
+\vspace{3truemm}
 ]
+
+\rhead{
+  \normalsize{
+  氏名: 新妻巧朗　試験区分: 情報科学区分　希望研究室: 自然言語処理研究室
+  }
+}
+
 \section{はじめに}
 \subsection{NAISTで取り組みたいこと}
 NAISTにて、私が取り組みたい研究テーマは「情報検索システムにおけるファセットの自動生成手法」である。
